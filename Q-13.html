@@ -1,0 +1,27 @@
+<!-- Write javascript program print out Fibonacci series. (0,1,1,2,3,5,8…) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-13</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let n = parseInt(prompt("Enter the number :- "));
+        let i;
+        var a = 0;
+        var b = 1;
+        var c;
+        document.write(`<h1>${a}</h1>`);
+        document.write(`<h1>${b}</h1>`);
+        for(i = 0;i < n;i++)
+        {
+            c = a + b;
+            a = b;
+            b = c;
+            document.write(`<h1> ${c}</h1>`);
+        }
+    </script>
+</body>
+</html>
